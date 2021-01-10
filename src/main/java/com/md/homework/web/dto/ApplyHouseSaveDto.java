@@ -1,13 +1,12 @@
 package com.md.homework.web.dto;
 
 import com.md.homework.domain.Answer;
-import com.md.homework.domain.applyHouse.ApplyHouseInfo;
+import com.md.homework.domain.applyHouse.ApplyHouse;
 import com.md.homework.domain.customer.Customer;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @Getter
@@ -54,8 +53,8 @@ public class ApplyHouseSaveDto {
         this.is_marketing_receive_agree = is_marketing_receive_agree;
     }
 
-    public ApplyHouseInfo toEntity(Customer customer){
-        return ApplyHouseInfo.builder()
+    public ApplyHouse toEntity(Customer customer){
+        return ApplyHouse.builder()
                 .customer(customer)
                 .applicant(applicant)
                 .contact(contact)

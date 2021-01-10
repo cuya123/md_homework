@@ -4,12 +4,10 @@ import com.md.homework.domain.Answer;
 import com.md.homework.domain.BaseTimeEntity;
 import com.md.homework.domain.MovingType;
 import com.md.homework.domain.customer.Customer;
-import com.md.homework.domain.applyHouse.ApplyHouseInfo;
 import com.md.homework.domain.moveCompany.MoveCompany;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;

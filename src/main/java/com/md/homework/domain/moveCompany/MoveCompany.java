@@ -18,10 +18,6 @@ public class MoveCompany {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-//    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
-//    @JoinColumn(name="move_company_id", referencedColumnName="id")
-//    private List<Vehicle> vehicles = new ArrayList<>();
-
     @Column(nullable = false)
     private String name;
 

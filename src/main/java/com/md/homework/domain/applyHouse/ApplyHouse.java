@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
 @Getter
 @NoArgsConstructor
 @Entity
-public class ApplyHouseInfo {
+public class ApplyHouse {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -58,7 +58,7 @@ public class ApplyHouseInfo {
     private Answer is_marketing_receive_agree;
 
     @Builder
-    public ApplyHouseInfo(Customer customer, String applicant, String contact, String starting_point, int starting_point_floor, String destination, int destination_floor, LocalDateTime moving_at, Answer is_storage_option, Answer is_term_agree, Answer is_personal_submit_agree, Answer is_marketing_receive_agree) {
+    public ApplyHouse(Customer customer, String applicant, String contact, String starting_point, int starting_point_floor, String destination, int destination_floor, LocalDateTime moving_at, Answer is_storage_option, Answer is_term_agree, Answer is_personal_submit_agree, Answer is_marketing_receive_agree) {
         this.customer = customer;
         this.applicant = applicant;
         this.contact = contact;
