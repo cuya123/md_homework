@@ -32,7 +32,7 @@ public class ApplyHouseServiceTest {
     ApplyHouseRepository applyHouseRepository;
 
     @Test
-    public void 신청서_작성() throws Exception{
+    public void 신청서_작성_테스트() throws Exception{
 
         //given
         String name="김노드";

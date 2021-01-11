@@ -20,7 +20,7 @@ public class MoveCompanyService {
     private final VehicleRepository vehicleRepository;
     private final MoveCompanyRepository moveCompanyRepository;
 
-
+    /*모든 사업체 불러오기*/
     @Transactional(readOnly = true)
     public List<MoveCompanyResponseDto> findAll() {
         return moveCompanyRepository.findAll().stream()
@@ -33,9 +33,7 @@ public class MoveCompanyService {
     @Transactional
     public void updateCompanyInfo(MoveCompanyUpdateRequestDto moveCompanyUpdateRequestDto){
 
-
         List<Vehicle> vehicles = vehicleRepository.findByMoveCompany_Id(moveCompanyUpdateRequestDto.getMove_company_id());
-
 
         for (Vehicle vehicle : vehicles){
             if(vehicle.getVehicle_type().name().equals(moveCompanyUpdateRequestDto.getONE_POINT_FIVE().name())){

@@ -22,7 +22,6 @@ public class MoveCompanyServiceTest {
 
     @Autowired
     MoveCompanyService moveCompanyService;
-
     @Autowired
     MoveCompanyRepository moveCompanyRepository;
     @Autowired
@@ -30,7 +29,7 @@ public class MoveCompanyServiceTest {
 
 
     @Test
-    public void 차량정보_업데이트(){
+    public void 차량정보_업데이트_테스트(){
 
         //given
         //회사정보 삽입

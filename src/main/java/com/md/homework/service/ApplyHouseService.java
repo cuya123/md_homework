@@ -19,8 +19,6 @@ public class ApplyHouseService {
     private final CustomerRepository customerRepository;
     private final ApplyHouseRepository applyHouseRepository;
 
-
-
     /*모든신청서 불러오기*/
     @Transactional(readOnly = true)
     public List<ApplyHouseResponseDto> findAll() {
@@ -28,7 +26,6 @@ public class ApplyHouseService {
                 .map(ApplyHouseResponseDto::new)
                 .collect(Collectors.toList());
     }
-
 
     /*이사 신청*/
     @Transactional
